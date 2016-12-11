@@ -1,0 +1,102 @@
+@import '../base.scss';
+@mixin selection {
+  ::-moz-selection { @content; }
+  ::selection { @content; }
+}
+@include selection {
+  color: white;
+  background: $selectionBGC;
+}
+
+.appWrap {
+  height: 100vh;
+  color: $color;
+  -webkit-overflow-scrolling: touch;
+  .addBtnWrap {
+    display: none;
+    position: fixed;
+    width: 100%;
+    margin-top: 1rem;
+    text-align: center;
+  }
+  .show {
+    display: block;
+  }
+  .addBtn {
+    cursor: pointer;
+    font-size: 30px;
+    line-height: 85%;
+    width: 36px;
+    height: 36px;
+    background: transparent;
+    border-radius: 50%;
+    color: #c8e6c9;
+    border: 2px solid #c8e6c9;
+    outline: none;
+    -webkit-transition:
+      text-shadow .2s,
+      color .2s,
+      border .2s,
+      box-shadow .2s;
+    transition:
+      text-shadow .2s,
+      color .2s,
+      border .2s,
+      box-shadow .2s;
+
+    &:hover {
+      text-shadow: 0 0 10px #fff;
+      color: #e8f5e9;
+      border: 2px solid #e8f5e9;
+    }
+  }
+  .activeBtn {
+    text-shadow: 0 0 10px #fff;
+    color: #e8f5e9;
+    border: 2px solid #e8f5e9;
+  }
+  .content {
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .spinner {
+      font-size: 2rem;
+    }
+    .hide {
+      display: none;
+    }
+  }
+}
+
+// .enter {
+//   opacity: 0.01;
+// }
+
+// .enter.enterActive {
+//   opacity: 1;
+//   transition: opacity 500ms ease-in;
+// }
+
+// .leave {
+//   opacity: 1;
+// }
+
+// .leave.leaveActive {
+//   opacity: 0.01;
+//   transition: opacity 300ms ease-in;
+// }
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  font-size: 12px;
+}
+
+.author {
+  text-decoration: none;
+  color: #fff;
+}

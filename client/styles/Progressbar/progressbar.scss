@@ -1,0 +1,24 @@
+@import '../base.scss';
+
+.barWrap {
+  top: 0;
+  position: fixed;
+  height: .2rem;
+  width: 100%;
+
+  .bar {
+    width: 0%;
+    height: 100%;
+    background-color: #fdd835;
+  }
+  @keyframes bar {
+    0% {width: 0%;}
+    95% {width: 100%;}
+    99% {width: 0%;}
+  }
+  .active {
+    -webkit-animation-name: bar;
+    animation-name: bar;
+    animation-timing-function: linear;
+  }
+}

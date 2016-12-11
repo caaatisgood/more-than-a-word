@@ -1,0 +1,22 @@
+@import '../base.scss';
+
+.titleWrap {
+  top: 0px;
+  z-index: 9999;
+  position: fixed;
+  width: 100%;
+  background-color: $bgc;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  .en {
+    font-size: 2rem;
+    display: inline-block;
+    border-bottom: 3px solid $color;
+    text-shadow: 2px 2px 0px #2e7d32;
+    box-shadow: 0px 2px 0px #2e7d32;
+  }
+  .tw {
+    font-size: 2rem;
+  }
+}

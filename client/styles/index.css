@@ -1,0 +1,18 @@
+html {
+  font-size: 18px;
+  font-family: 'Bitter', Microsoft JhengHei;
+  background-color: #81c784;
+}
+body {
+  margin: 0px;
+}
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 460px) {
+  html {
+    font-size: 12px;
+  }
+}

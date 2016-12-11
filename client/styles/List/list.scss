@@ -1,0 +1,22 @@
+.listWrap {
+  padding-top: 3rem;
+  font-size: 3rem;
+  .sentenceWrap {
+    display: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    .word {
+      padding: 0 1rem;
+      // background-color: #fff;
+    }
+    .head, .tail {
+      width: 100%;
+    }
+    .head {
+      text-align: right;
+    }
+    .tail {
+      text-align: left;
+    }
+  }
+}

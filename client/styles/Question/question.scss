@@ -1,0 +1,33 @@
+@import '../base.scss';
+@mixin transition($val) {
+  -webkit-transition: $val;
+  transition: $val;
+}
+.questionWrap {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .word {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 0px #2e7d32;
+    @include transition(opacity .2s)
+  }
+  .sentence {
+    text-align: left;
+    width: 70%;
+    font-size: 2rem;
+    padding-left: 1rem;
+    border-left: .5rem solid $color;
+    line-height: 140%;
+    word-spacing: .2rem;
+    @include transition(opacity .2s)
+  }
+  @media (max-width: 640px) {
+    .sentence {
+      width: 93%;
+    }
+  }
+}
